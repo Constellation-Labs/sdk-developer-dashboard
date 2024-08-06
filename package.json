@@ -8,10 +8,10 @@
     "build": "next build",
     "start": "next start -p 8080",
     "lint": "next lint",
-    "metagraph-transaction:send": "ts-node --esm scripts/send_transactions/index.ts",
-    "metagraph-transaction:send-bulk": "ts-node --esm scripts/send_transactions/index.ts bulk",
-    "dag-transaction:send": "ts-node --esm scripts/send_transactions/index.ts dag",
-    "dag-transaction:send-bulk": "ts-node --esm scripts/send_transactions/index.ts bulk dag"
+    "metagraph-transaction:send": "npx tsx scripts/send_transactions/index.ts",
+    "metagraph-transaction:send-bulk": "npx tsx --esm scripts/send_transactions/index.ts bulk",
+    "dag-transaction:send": "npx --esm scripts/send_transactions/index.ts dag",
+    "dag-transaction:send-bulk": "npx --esm scripts/send_transactions/index.ts bulk dag"
   },
   "dependencies": {
     "@next/font": "^13.2.4",
